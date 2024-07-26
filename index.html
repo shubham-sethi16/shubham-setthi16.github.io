@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Sethi - Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+    
+        <!-- header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 2rem 0;
+            text-align: center;
+        } -->
+        
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .binary-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .binary-row {
+            display: flex;
+            white-space: nowrap;
+            font-family: monospace;
+            font-size: 1.2rem;
+            opacity: 0.1;
+            animation: scrollBinary 20s linear infinite;
+        }
+
+        .binary-row:nth-child(even) {
+            animation-direction: reverse;
+        }
+
+        @keyframes scrollBinary {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        header h1, header p, .profile-pic {
+            position: relative;
+            z-index: 2;
+        }
+
+        header h1 {
+            margin-bottom: 0rem;
+            font-size: 2.5rem;
+        }
+    
+        nav {
+            background-color: #34495e;
+            padding: 1rem 0;
+        }
+    
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+    
+        nav a:hover {
+            background-color: #2c3e50;
+        }
+    
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+    
+        section {
+            margin-bottom: 3rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.5s forwards;
+        }
+    
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
+        h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+        }
+    
+        .project, .job {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+    
+        .project:hover, .job:hover {
+            transform: translateY(-5px);
+        }
+    
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+    
+        .social-links a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #3498db;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+    
+        .social-links a:hover {
+            background-color: #2980b9;
+        }
+    
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: block;
+            object-fit: cover;
+            border: 3px solid #ecf0f1;
+        }
+    
+        @media (max-width: 600px) {
+            header {
+                padding: 1rem 0;
+            }
+    
+            nav a {
+                display: block;
+                padding: 0.5rem 0;
+            }
+    
+            main {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="binary-background">
+            <div class="binary-row">01001000 01100101 01101100 01101100 01101111 00100000 01010111 01101111 01110010 01101100 01100100 00100001 </div>
+            <div class="binary-row">01010011 01101000 01110101 01100010 01101000 01100001 01101101 00100000 01010011 01100101 01110100 01101000 01101001 </div>
+            <div class="binary-row">01000011 01101111 01101101 01110000 01110101 01110100 01100101 01110010 00100000 01010011 01100011 01101001 01100101 01101110 01100011 01100101 </div>
+            <div class="binary-row">01000001 01101110 01100100 01110010 01101111 01101001 01100100 00100000 01000100 01100101 01110110 01100101 01101100 01101111 01110000 01100101 01110010 </div>
+            
+            <div class="binary-row">01001001 01001001 01001001 01010100 00101101 01000100 01100101 01101100 01101000 01101001 </div>
+            <div class="binary-row">01001000 01100101 01101100 01101100 01101111 00100000 01010111 01101111 01110010 01101100 01100100 00100001 </div>
+            <div class="binary-row">01010011 01101000 01110101 01100010 01101000 01100001 01101101 00100000 01010011 01100101 01110100 01101000 01101001 </div>
+            <div class="binary-row">01000011 01101111 01101101 01110000 01110101 01110100 01100101 01110010 00100000 01010011 01100011 01101001 01100101 01101110 01100011 01100101 </div>
+            <div class="binary-row">01000001 01101110 01100100 01110010 01101111 01101001 01100100 00100000 01000100 01100101 01110110 01100101 01101100 01101111 01110000 01100101 01110010 </div>
+            <div class="binary-row">01001001 01001001 01001001 01010100 00101101 01000100 01100101 01101100 01101000 01101001 </div>
+        </div>
+
+        <img src="MT22071.jpeg" alt="Shubham Sethi" class="profile-pic">
+        <h1>Shubham Sethi</h1>
+        <p>Android Developer | IIIT-Delhi Graduate</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm an Android Developer with a Master's in Computer Science from IIIT-Delhi (2022-24) and a B.Tech in Computer Science from Maharaj Surajmal Institute of Technology. Passionate about solving real-life problems, I'm skilled in development, DSA, C, C++, OS, and DBMS. When I'm not coding, you can find me watching or playing football.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Sportify</h3>
+                <p>Designed a scalable NoSQL database for an app that helps users find sports companions and track equipment. Implemented a complaint tracking system that reduced problem-solving wait times by 70%.</p>
+            </div>
+            <div class="project">
+                <h3>Medicine Reminder Application</h3>
+                <p>Developed a mobile app with 15+ features, including timely medicine reminders and monthly subscriptions. Increased user engagement by 25% through active interaction features.</p>
+            </div>
+            <div class="project">
+                <h3>Product Recommendation System</h3>
+                <p>Engineered a website with personalized product recommendations using collaborative filtering, content-based filtering, and popularity-based filtering. Resulted in a 25% increase in average order value.</p>
+            </div>
+            <div class="project">
+                <h3>Facial ATM (B.Tech Minor)</h3>
+                <p>Designed an interface for accessing bank account information using facial recognition, implementing PCA, LBPH, and CNN for improved accuracy.</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Android Developer</h3>
+                
+                <div><p><strong>MyUpchar</strong> | May 2024 - Present</p></div>
+                <br>
+                <div>
+                    <ul>
+                        <li>Developing and maintaining Android applications</li>
+                        <li>Collaborating with cross-functional teams to define and implement new features</li>
+                        <li>Ensuring the performance, quality, and responsiveness of applications</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section id="Achievements">
+            <h2>Achievements</h2>
+            <p>I have Qualified GATE CSE Exam 3 times and have secured AIR-757 (99.4)%tile in GATE Cse 24</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: shubhamsethi1699@gmail.com</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/shubham-sethi-0758a2187/" target="_blank">LinkedIn</a>
+                <a href="https://drive.google.com/file/d/1Y9K_Cq8eZzjis6rzDMNRqwMW3V30z8E4/view?usp=sharing" target="_blank">My Resume</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Shubham Sethi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
